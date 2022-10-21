@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Homework HTML5 Forms</title>
+</head>
+
+<body>
+    <form method="get">
+        <p>
+            <label for="login">Логин:</label>
+            <input type="text" required id="login" name="login" />
+        </p>
+        <p>
+            <label for="password">Пароль:</label>
+            <input type="password" required id="password" name="password" />
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+    <form method="get">
+        <p>
+            <label for="phone">Телефон:</label>
+            <input type="text" placeholder="+1-234-567-8901" pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone" name="phone" />
+        </p>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+    <h1>Login!</h1>
+    <form method="post" action="http://localhost:8080/login.php">
+        <input name="login" placeholder="Login" />
+        <input type="password" placeholder="Password" required id="password" name="password" />
+        <input type="submit" value="Login" />
+    </form>
+
+    <form method="get">
+        <p>
+            <label for="comment">Main principles of OOP </label><br />
+            <textarea name="comment" id="comment" placeholder="Не более 200 символов" maxlength="200" cols="30"
+                rows="7"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Добавить" />
+        </p>
+    </form>
+    <form method="get">
+        <p>
+            <label for="placeorder">Make an order</label>
+            <select id="placeorder" name="placeorder">
+                <option value="iphone 14">iPhone 13</option>
+                <option value="Samsung S22">Samsung s22</option>
+                <option value="IPad Pro">IPad Pro</option>
+                <option value="MacBook Pro">MacBook Pro</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Make an order" />
+        </p>
+    </form>
+</body>
+
+</html>
+
+<!-- 
+<form>
+    <p>
+        <label for="firstname">Имя: </label>
+        <input type="text" id="firstname" name="firstname" />
+    </p>
+    <p>
+        <label for="date">Дата рождения: </label>
+        <input type="date" id="date" name="date" />
+    </p>
+    <p>
+        <button type="submit">Отправить</button>
+    </p>
+</form> -->
+
